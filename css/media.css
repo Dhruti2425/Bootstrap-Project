@@ -1,0 +1,14 @@
+@media(min-width:992px){
+	.carousel-item{
+		height:850px;
+	}
+	.carousel-item h2{
+		font-size:90px;
+	}
+	.carousel .carousel-inner .carousel-item:first-child h2::before{
+		content: "";
+		height: 22px;
+		width: 400px;
+		top: 33%;
+	}
+}

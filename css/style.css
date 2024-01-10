@@ -1,0 +1,175 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+.py-100{
+	padding: 100px 0;
+}
+.mt-70{
+	margin-top: 70px;
+}
+img{
+	max-width: 100%;
+}
+.theme-btn{
+	background: -webkit-linear-gradient(120deg, #505add, #df42b1);
+}
+.bg-blue{
+	background-color: #151853;
+}
+.about-item h6, .countdown-area h6, .speaking-area h5, .schedule-heading p, .partners-heading p, .client-info h6, .contact-us-heading p, .schedule-time i, .ticket-table ul li i{
+	color: #df42b1;
+}
+.ticket::before, .blog:before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background-image:linear-gradient(330deg, #df42b1 0%, #505add 100%);
+	opacity: 0.9;
+	z-index: -1;
+}
+.transition{
+	transition: all 0.5s;
+}
+
+/* SLIDER */
+
+.carousel-item{
+	background:url(../img/slider-1.jpg) rgba(0,0,0,0.4);
+	height:550px;
+	background-size:cover;
+	background-position:center;
+	background-blend-mode:color-dodge;
+}
+.carousel-item:last-child{
+	background:url(../img/slider-2.jpg) rgba(0,0,0,0.4);
+}
+.carousel-control-prev, .carousel-control-next{
+	width:45px;
+	height:45px;
+}
+.carousel-control-prev:hover, .carousel-control-next:hover{
+	background-color:rgb(255 255 255 / 50%);
+}
+.carousel-control-prev{
+	left:40px;
+}
+.carousel-control-next{
+	right:40px;
+}
+.carousel .carousel-inner .carousel-item:first-child h2::before{
+	content: "";
+	height: 22px;
+	width: 280px;
+	position: absolute;
+	top: 30%;
+	right: 0;
+	z-index: -1;
+	background-image: -webkit-linear-gradient(120deg, #505add 0%, #df42b1 100%);
+}
+
+/* ABOUT */
+
+.about .countdown-area .countdown-timer .clock div{
+	width: 150px;
+}
+
+/* OUR SPEAKINGS */
+
+.our-speaking{
+	background:url(../img/speaking.png), linear-gradient(320deg, #df42b1 0%, #505add 100%);
+	background-blend-mode:lighten;
+	background-size:cover;
+}
+.our-speaking .speaking-area::before{
+	content: '';
+	position: absolute;
+    width: 100%;
+    height: 100%;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+	border-radius: 8px;
+}
+.our-speaking .speaking-area .social-info{
+	top: -192px;
+	background-color: #df42b1;
+}
+.speaking-area:hover .social-info{
+	top: 0;
+}
+
+/* OUR-SCHEDULE */
+
+.our-schedule .schedule-area{
+	border: 1px solid #444675;
+}
+.our-schedule .schedule-area .schedule-time p{
+	font-size: 17.5px;
+	letter-spacing: 1px;
+}
+.our-schedule .schedule-inner .schedule-area:hover{
+	border: 1px solid #df42b1;
+}
+
+/* TICKET */
+
+.ticket{
+	background: url(../img/ticket.jpg);
+    background-size: cover;
+}
+.ticket .ticket-table:hover{
+	scale: 1.05;
+}
+.ticket .ticket-table h6{
+	background-color: #df42b1;
+    letter-spacing: 1px;
+}
+.ticket .ticket-table .ticket-price span{
+    top: -25px;
+}
+
+/* PARTNERS  */
+
+.partners .partners-inner .partners-logo{
+    height: 240px;
+}
+.partners .partners-inner .partners-logo a img{
+	opacity: 0.5;
+}
+.partners .partners-inner .partners-logo:hover img{
+	opacity: 1;
+}
+
+/* BLOG */
+
+.blog{
+	background: url(../img/blog.png);
+    background-size: cover;
+}
+.blog .blog-area:hover img{
+	scale: 1.2;
+}
+.blog .blog-area .blog-btn{
+	padding: 6px 12px;
+}
+
+/* CONTACT-US */
+
+.contact-us .contact-inner .contact-form .contact-input .form-group ::-webkit-input-placeholder{
+	color:#71718b;
+}
+
+/* FOOTER */
+
+footer{
+	background-color: #111343;
+	padding-top: 100px;
+}
+footer .footer-inner .footer-item .social-icon a{
+	padding: 8px 12px;
+}
+footer .footer-inner .footer-item .social-icon a:hover{
+	background-color: #71718b;
+}
